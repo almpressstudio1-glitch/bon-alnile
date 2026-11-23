@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>بُنّ النيل – مقهى ومحمصة</title>
+<meta name="description" content="بُنّ النيل: مقهى ومحمصة جنب النيل في أسيوط. قهوة محمصة يومياً، حلويات بيتي، وحجز طاولة أونلاين (موقع تجريبي).">
+<meta name="theme-color" content="#0e1c25">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e1c25;--bg2:#15303d;--ink:#eaf2ef;--mute:#93abb5;--gold:#f0a93a;--line:rgba(234,242,239,.16);--btn-ink:#1b1204}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eef4f1;--bg2:#dbe8e3;--ink:#10232d;--mute:#4d6672;--gold:#9a5a00;--line:rgba(16,35,45,.18);--btn-ink:#fff}}
+:root[data-theme="light"]{--bg:#eef4f1;--bg2:#dbe8e3;--ink:#10232d;--mute:#4d6672;--gold:#9a5a00;--line:rgba(16,35,45,.18);--btn-ink:#fff}
+:root[data-theme="dark"]{--bg:#0e1c25;--bg2:#15303d;--ink:#eaf2ef;--mute:#93abb5;--gold:#f0a93a;--line:rgba(234,242,239,.16);--btn-ink:#1b1204}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Readex Pro",Tahoma,Arial,sans-serif;line-height:1.8;font-weight:300}
+h1,h2,h3,.brand{font-family:"Reem Kufi","Readex Pro",Tahoma,sans-serif;font-weight:700;line-height:1.25;margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:0;padding-top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;flex-wrap:wrap}
+.brand{font-size:1.6rem;text-decoration:none;color:var(--gold)}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{text-decoration:none;padding:6px 14px;border-radius:99px;color:var(--mute);font-weight:400;transition:.2s}
+nav a:hover{color:var(--ink)}
+nav a[aria-current="page"]{background:var(--gold);color:var(--btn-ink)}
+.btn{display:inline-block;border:0;cursor:pointer;font:600 1rem "Readex Pro",Tahoma,sans-serif;background:var(--gold);color:var(--btn-ink);padding:12px 26px;border-radius:99px;text-decoration:none}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--line)}
+.btn:hover{filter:brightness(1.08)}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:10px;min-height:calc(100vh - 64px);min-height:calc(100svh - 64px)}
+.hero h1{font-size:clamp(2.3rem,5.5vw,4.2rem);margin-bottom:18px}
+.hero p{color:var(--mute);font-size:1.1rem;max-width:34ch;margin:0 0 28px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+#stage{position:relative;height:min(78vh,620px);min-height:340px;touch-action:pan-y}
+#stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.glow{position:absolute;inset:12% 8%;border-radius:50%;background:radial-gradient(circle,rgba(240,169,58,.25),transparent 65%);filter:blur(10px)}
+.fb{position:absolute;inset:0;display:grid;place-items:center;font-size:7rem}
+[tabindex="-1"]:focus{outline:none}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-block:1px solid var(--line);margin-bottom:70px}
+.facts div{padding:26px 22px;border-inline-start:1px solid var(--line)}
+.facts div:first-child{border-inline-start:0}
+.facts h3{font-size:1.25rem;color:var(--gold);margin-bottom:6px}
+.facts p{margin:0;color:var(--mute);font-size:.95rem}
+.page-head{padding:56px 0 26px}
+.page-head h2{font-size:clamp(2rem,4.5vw,3rem)}
+.page-head p{color:var(--mute);margin:8px 0 0}
+.tabs{display:flex;gap:8px;margin:10px 0 26px;flex-wrap:wrap}
+.tabs button{font:400 1rem "Readex Pro",Tahoma,sans-serif;background:none;color:var(--mute);border:1px solid var(--line);padding:8px 20px;border-radius:99px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.menu{list-style:none;margin:0 0 70px;padding:0;max-width:760px}
+.menu li{display:flex;align-items:baseline;gap:10px;padding:14px 0}
+.menu .n{font-family:"Reem Kufi",sans-serif;font-weight:700;font-size:1.25rem}
+.menu .d{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px)}
+.menu .p{color:var(--gold);font-weight:600;white-space:nowrap}
+.menu small{display:block;color:var(--mute);font-size:.88rem;font-weight:300}
+.menu li>div:first-child{max-width:60%}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding-bottom:80px}
+.panel{background:var(--bg2);border-radius:22px;padding:30px}
+label{display:block;margin-bottom:16px;font-weight:400;font-size:.95rem}
+input,select{width:100%;margin-top:6px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:300 1rem "Readex Pro",Tahoma,sans-serif}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#msg{margin-top:16px;min-height:1.6em;font-weight:600}
+#msg.ok{color:var(--gold)}
+#msg.err{color:#e5645a}
+.hours{list-style:none;padding:0;margin:14px 0 0}
+.hours li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)}
+.about p{color:var(--mute);max-width:52ch}
+footer{border-top:1px solid var(--line);padding:26px 0 34px;color:var(--mute);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+[hidden]{display:none!important}
+@media (max-width:820px){.hero{grid-template-columns:1fr;min-height:0;padding-top:20px}#stage{order:-1;height:340px}.facts,.two{grid-template-columns:1fr}.facts div{border-inline-start:0;border-top:1px solid var(--line)}.facts div:first-child{border-top:0}.menu li>div:first-child{max-width:70%}}
+#bot-fab{position:fixed;inset-inline-end:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;border:0;cursor:pointer;background:var(--gold);color:var(--btn-ink);font:600 1rem "Readex Pro",Tahoma,sans-serif;padding:13px 22px;border-radius:99px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+#bot{position:fixed;inset-inline-end:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:31;width:min(370px,calc(100vw - 36px));height:min(520px,calc(100vh - 100px));height:min(520px,calc(100dvh - 100px));display:flex;flex-direction:column;background:var(--bg2);border:1px solid var(--line);border-radius:22px;box-shadow:0 18px 50px rgba(0,0,0,.45);overflow:hidden}
+#bot header{position:static;display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--bg);border-bottom:1px solid var(--line);backdrop-filter:none}
+#bot header b{font-family:"Reem Kufi",sans-serif;font-size:1.15rem;color:var(--gold)}
+#bot header button{background:none;border:0;color:var(--mute);font-size:1.4rem;cursor:pointer;line-height:1}
+#blog{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.m{max-width:85%;padding:10px 14px;border-radius:16px;font-size:.95rem;line-height:1.7;animation:pop .25s ease-out}
+.m.b{align-self:flex-start;background:var(--bg);border-end-start-radius:4px}
+.m.u{align-self:flex-end;background:var(--gold);color:var(--btn-ink);border-end-end-radius:4px}
+.m .lk{display:inline-block;margin-top:6px;padding:4px 14px;border-radius:99px;background:var(--gold);color:var(--btn-ink);text-decoration:none;font-weight:600;font-size:.88rem}
+#chips{display:flex;gap:6px;flex-wrap:wrap;padding:0 14px 10px}
+#chips button{font:400 .85rem "Readex Pro",Tahoma,sans-serif;background:none;color:var(--ink);border:1px solid var(--line);padding:5px 12px;border-radius:99px;cursor:pointer}
+#brow{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}
+#brow input{margin:0;flex:1}
+#brow .btn{padding:10px 18px}
+@keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.m{animation:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="#home">بُنّ النيل</a>
+<nav aria-label="التنقل الرئيسي">
+<a href="#home">الرئيسية</a><a href="#menu">المنيو</a><a href="#reserve">احجز طاولة</a><a href="#about">عن المقهى</a>
+</nav></div></header>
+
+<main>
+<section data-page="home"><div class="wrap">
+<div class="hero">
+<div>
+<h1>قهوة محمصة على مهل، وكوباية تستاهل تقعد عندها</h1>
+<p>بنحمّص البن كل يوم الصبح، ونقدمه جنب النيل في أسيوط.</p>
+<div class="cta"><a class="btn" href="#menu">شوف المنيو</a><a class="btn ghost" href="#reserve">احجز طاولة</a></div>
+</div>
+<div id="stage" role="img" aria-label="كوب قهوة ثلاثي الأبعاد، حرّك الماوس أو إصبعك لتحريكه"><div class="glow"></div></div>
+</div>
+<div class="facts">
+<div><h3>تحميص يومي</h3><p>حبوب من البرازيل وإثيوبيا واليمن، بتتحمص قدام عينيك.</p></div>
+<div><h3>قعدة هادية</h3><p>واي فاي سريع ومقاعد مريحة للمذاكرة والشغل.</p></div>
+<div><h3>حلويات بيتي</h3><p>كل يوم صنف جديد من مطبخنا الصغير.</p></div>
+</div>
+</div></section>
+
+<section data-page="menu" hidden><div class="wrap">
+<div class="page-head"><h2>المنيو</h2><p>الأسعار بالجنيه المصري.</p></div>
+<div class="tabs" id="tabs"></div>
+<ul class="menu" id="list"><li><div><span class="n">إسبريسو</span><small>شوت مركّز من تحميصة اليوم</small></div><span class="d"></span><span class="p">45 ج</span></li><li><div><span class="n">كابتشينو</span><small>حليب مبخّر ورغوة كثيفة</small></div><span class="d"></span><span class="p">65 ج</span></li><li><div><span class="n">فلات وايت</span><small>ضعف الإسبريسو مع حليب حريري</small></div><span class="d"></span><span class="p">70 ج</span></li><li><div><span class="n">قهوة تركي</span><small>على الرمل مع حبّ الهيل</small></div><span class="d"></span><span class="p">50 ج</span></li><li><div><span class="n">قهوة النيل</span><small>سبيشيال بالقرفة والعسل</small></div><span class="d"></span><span class="p">75 ج</span></li></ul>
+</div></section>
+
+<section data-page="reserve" hidden><div class="wrap">
+<div class="page-head"><h2>احجز طاولة</h2><p>املا البيانات وهنأكد معاك قبل ميعادك بساعة.</p></div>
+<div class="two">
+<div class="panel">
+<label>الاسم<input id="f-name" autocomplete="name"></label>
+<label>رقم الموبايل<input id="f-phone" inputmode="tel" dir="ltr" placeholder="01xxxxxxxxx"></label>
+<div class="row">
+<label>التاريخ<input id="f-date" type="date"></label>
+<label>الساعة<select id="f-time"><option>5:00 م</option><option>6:00 م</option><option>7:00 م</option><option>8:00 م</option><option>9:00 م</option><option>10:00 م</option></select></label>
+</div>
+<label>عدد الأشخاص<select id="f-n"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+<button class="btn" id="go" type="button">ابعت طلب الحجز</button>
+<div id="msg" role="status" aria-live="polite"></div>
+</div>
+<div>
+<h3>مواعيد العمل</h3>
+<ul class="hours" id="hours"><li><span>يومياً</span><span>8 صباحاً – 12 منتصف الليل</span></li></ul>
+</div>
+</div>
+</div></section>
+
+<section data-page="about" hidden><div class="wrap about">
+<div class="page-head"><h2>عن بُنّ النيل</h2></div>
+<div class="two">
+<div>
+<p>بدأ المكان كمحمصة صغيرة سنة 2016 بماكينة واحدة، وكبر مع الزباين اللي كانوا بيرجعوا كل يوم. ننقي الحبوب بنفسنا، ونحمصها على دفعات صغيرة، ونحضّرها بحب.</p>
+</div>
+<div class="panel">
+<h3>تعالى زورنا</h3>
+<p style="margin:10px 0 0">شارع الجمهورية، بجوار كورنيش النيل، أسيوط<br><span dir="ltr">0100 000 0000</span></p>
+</div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 بُنّ النيل</span><span>موقع تجريبي</span></div></footer>
+
+<button id="bot-fab" type="button" aria-expanded="false" aria-controls="bot">اسأل بُنّ ☕</button>
+<div id="bot" role="dialog" aria-label="مساعد بُنّ النيل" hidden>
+<header><b>بُنّ، مساعد المقهى</b><button id="bot-x" type="button" aria-label="إغلاق">×</button></header>
+<div id="blog" aria-live="polite"></div>
+<div id="chips"></div>
+<div id="brow"><input id="bot-in" placeholder="اكتب سؤالك…" autocomplete="off"><button class="btn" id="bot-send" type="button">ابعت</button></div>
+</div>
+<script>
+(function(){
+var PAGES=['home','menu','reserve','about'];
+var pages=[].slice.call(document.querySelectorAll('[data-page]'));
+var links=[].slice.call(document.querySelectorAll('nav a'));
+var onHome=true,booted=false,firstRoute=true;
+var TITLES={home:'بُنّ النيل – مقهى ومحمصة',menu:'المنيو – بُنّ النيل',reserve:'احجز طاولة – بُنّ النيل',about:'عن المقهى – بُنّ النيل'};
+function route(){
+  var h=(location.hash||'#home').slice(1);
+  if(PAGES.indexOf(h)<0)h='home';
+  pages.forEach(function(p){p.hidden=p.dataset.page!==h});
+  links.forEach(function(a){if(a.getAttribute('href')==='#'+h)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+  onHome=h==='home';window.scrollTo(0,0);
+  document.title=TITLES[h];
+  if(!firstRoute){var hd=document.querySelector('[data-page="'+h+'"] h1,[data-page="'+h+'"] h2');if(hd){hd.tabIndex=-1;hd.focus({preventScroll:true})}}
+  firstRoute=false;
+  if(onHome&&booted)loadThree();
+}
+window.addEventListener('hashchange',route);route();
+
+/* Menu */
+var DATA={
+'قهوة ساخنة':[['إسبريسو','شوت مركّز من تحميصة اليوم',45],['كابتشينو','حليب مبخّر ورغوة كثيفة',65],['فلات وايت','ضعف الإسبريسو مع حليب حريري',70],['قهوة تركي','على الرمل مع حبّ الهيل',50],['قهوة النيل','سبيشيال بالقرفة والعسل',75]],
+'مثلجة':[['آيس لاتيه','إسبريسو وحليب وثلج',70],['كولد برو','منقوع 16 ساعة',80],['فرابيه كراميل','مخفوق بصوص الكراميل',85],['أفوجاتو','آيس كريم فانيليا فوقه إسبريسو',90]],
+'حلويات':[['بسبوسة بالقشطة','طازة كل يوم',55],['تشيز كيك التوت','قاعدة بسكويت مقرمشة',80],['كوكيز شوكولاتة','دافي من الفرن',40],['أم علي','بالمكسرات وسخنة',65]]
+};
+var tabs=document.getElementById('tabs'),list=document.getElementById('list');
+function show(cat){
+  [].forEach.call(tabs.children,function(b){b.setAttribute('aria-pressed',b.textContent===cat)});
+  list.textContent='';
+  DATA[cat].forEach(function(i){var li=document.createElement('li'),l=document.createElement('div'),n=document.createElement('span'),s=document.createElement('small'),d=document.createElement('span'),p=document.createElement('span');n.className='n';n.textContent=i[0];s.textContent=i[1];l.appendChild(n);l.appendChild(s);d.className='d';p.className='p';p.textContent=i[2]+' ج';li.appendChild(l);li.appendChild(d);li.appendChild(p);list.appendChild(li)});
+}
+Object.keys(DATA).forEach(function(c){var b=document.createElement('button');b.type='button';b.textContent=c;b.onclick=function(){show(c)};tabs.appendChild(b)});
+show('قهوة ساخنة');
+
+/* Reservation */
+var d=document.getElementById('f-date');
+try{var now=new Date();d.min=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0')}catch(e){}
+document.getElementById('go').onclick=function(){
+  var m=document.getElementById('msg'),n=document.getElementById('f-name').value.trim(),p=document.getElementById('f-phone').value.trim();
+  if(!n||!/^01\d{9}$/.test(p)||!d.value){m.className='err';m.textContent='اكتب الاسم ورقم موبايل صحيح (11 رقم) واختار التاريخ.';return}
+  m.className='ok';/* TODO: ابعت الطلب لـ backend أو واتساب قبل النشر الفعلي */
+  m.textContent='تم استلام طلبك يا '+n+'، طاولة لـ '+document.getElementById('f-n').value+' يوم '+d.value+' الساعة '+document.getElementById('f-time').value+'. هنكلمك نأكد.';
+};
+
+/* Chatbot */
+var fab=document.getElementById('bot-fab'),bot=document.getElementById('bot'),blog=document.getElementById('blog'),bin=document.getElementById('bot-in'),started=false;
+function norm(s){return s.replace(/[\u064B-\u0652\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').toLowerCase()}
+function has(q,w){var t=q.split(/[^\u0621-\u064Aa-z0-9]+/);return w.some(function(x){x=norm(x);if(x.length>3)return q.indexOf(x)>-1;return t.indexOf(x)>-1||t.indexOf('ال'+x)>-1})}
+function add(t,c,lk){var d=document.createElement('div');d.className='m '+c;d.textContent=t;if(lk){d.appendChild(document.createElement('br'));var a=document.createElement('a');a.className='lk';a.textContent=lk[0];a.href=lk[1];a.onclick=closeBot;d.appendChild(a)}blog.appendChild(d);blog.scrollTop=blog.scrollHeight}
+function pick(a){return a[Math.floor(Math.random()*a.length)]}
+var ALIAS={'كابتشينو':['كابوتشينو','كباتشينو','cappuccino'],'إسبريسو':['اسبريسو','اكسبريسو','espresso'],'فلات وايت':['flat white'],'آيس لاتيه':['ايس لاتيه','ايس لاتي','iced latte'],'كولد برو':['cold brew'],'قهوة تركي':['قهوة تركية','تركي'],'فرابيه كراميل':['فرابيه','frappe'],'أفوجاتو':['افوغاتو'],'تشيز كيك التوت':['تشيز كيك','تشيزكيك'],'كوكيز شوكولاتة':['كوكيز']};
+function item(n){for(var k in DATA)for(var j=0;j<DATA[k].length;j++)if(DATA[k][j][0]===n)return DATA[k][j]}
+function pr(n){return '«'+n+'» '+item(n)[2]+' ج'}
+function match(q,it){return [it[0]].concat(ALIAS[it[0]]||[]).some(function(n){return q.indexOf(norm(n))>-1})}
+function answer(raw){
+  var q=norm(raw),k,j;
+  for(k in DATA)for(j=0;j<DATA[k].length;j++){var it=DATA[k][j];if(match(q,it))return ['«'+it[0]+'»: '+it[1]+'. سعره '+it[2]+' جنيه.',['افتح المنيو','#menu']]}
+  if(has(q,['شكرا','تسلم','ميرسي']))return ['العفو! أي خدمة تانية؟'];
+  if(has(q,['حجز','احجز','طاول']))return ['تمام، املا بيانات الحجز وهنأكدها معاك.',['احجز طاولة','#reserve']];
+  if(has(q,['ميعاد','مواعيد','فاتح','بتفتح','تقفل','بتقفل','ساعات']))return ['بنفتح يومياً من 8 الصبح لـ 12 منتصف الليل.'];
+  if(has(q,['عنوان','فين','مكان','لوكيشن','موقعكم']))return ['إحنا في شارع الجمهورية، بجوار كورنيش النيل، أسيوط. تليفون: 0100 000 0000.',['عن المقهى','#about']];
+  if(has(q,['واي فاي','wifi','نت','انترنت']))return ['أيوه، واي فاي سريع ومجاني لكل الزباين.'];
+  if(has(q,['ترشح','انصح','اجرب','احسن','افضل','اختار'])){
+    if(has(q,['ساقع','مثلج','حر','بارد']))return ['جرب '+pr('كولد برو')+'، أو '+pr('آيس لاتيه')+'.'];
+    if(has(q,['حلو','حلويات','اكل']))return [pr('أم علي')+' بالمكسرات هي الأكتر طلباً.'];
+    return [pick(['جرب '+pr('قهوة النيل')+' بالقرفة والعسل.',pr('فلات وايت')+' اختيار ممتاز لو بتحب القهوة الحريرية.',pr('كابتشينو')+' بالرغوة الكثيفة.'])]}
+  if(has(q,['منيو','قايم','مشروب','سعر','اسعار','بكام','حلويات','قهوه']))return ['عندنا قهوة ساخنة، مشروبات مثلجة، وحلويات. اسألني عن صنف بالاسم وأقولك سعره.',['افتح المنيو','#menu']];
+  if(has(q,['سلام','اهلا','مرحبا','هاي','صباح','مساء','هلا']))return ['أهلاً بيك في بُنّ النيل! تحب تعرف إيه؟'];
+  return ['معلش ما فهمتش. جرب تسأل عن المنيو أو المواعيد أو العنوان أو الحجز.'];
+}
+function send(t){t=(t||'').trim();if(!t)return;add(t,'u');bin.value='';setTimeout(function(){var r=answer(t);add(r[0],'b',r[1])},400)}
+function openBot(){bot.hidden=false;fab.hidden=true;fab.setAttribute('aria-expanded','true');if(!started){started=true;add('أهلاً! أنا بُنّ، مساعد المقهى. اسألني أي حاجة.','b')}bin.focus()}
+function closeBot(){bot.hidden=true;fab.hidden=false;fab.setAttribute('aria-expanded','false')}
+bot.hidden=true;fab.onclick=openBot;document.getElementById('bot-x').onclick=closeBot;
+document.getElementById('bot-send').onclick=function(){send(bin.value)};
+bin.addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.isComposing)send(bin.value)});
+bot.addEventListener('keydown',function(e){if(e.key==='Escape')closeBot()});
+['المنيو','المواعيد','العنوان','احجز طاولة','ترشحلي حاجة'].forEach(function(c){var b=document.createElement('button');b.type='button';b.textContent=c;b.onclick=function(){send(c)};document.getElementById('chips').appendChild(b)});
+
+/* 3D coffee cup */
+var box=document.getElementById('stage'),threeState=0;
+function fallback(){if(!box.querySelector('.fb')){var f=document.createElement('div');f.className='fb';f.setAttribute('aria-hidden','true');f.textContent='☕';box.appendChild(f)}}
+function loadThree(){
+  if(threeState)return;
+  if(typeof THREE!=='undefined'){threeState=2;init3D();return}
+  threeState=1;
+  var sc=document.createElement('script');
+  sc.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
+  sc.onload=function(){threeState=2;init3D()};
+  sc.onerror=function(){threeState=0;fallback()};
+  document.head.appendChild(sc);
+}
+function init3D(){
+var renderer;
+try{renderer=new THREE.WebGLRenderer({antialias:true,alpha:true})}catch(e){fallback();return}
+renderer.domElement.addEventListener('webglcontextlost',function(ev){ev.preventDefault();fallback()});
+renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
+box.appendChild(renderer.domElement);
+var scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(35,1,.1,50);
+cam.position.set(0,3.2,9);cam.lookAt(0,.9,0);
+scene.add(new THREE.AmbientLight(0xffffff,.65));
+var key=new THREE.DirectionalLight(0xffd9a0,1.1);key.position.set(4,6,5);scene.add(key);
+var rim=new THREE.DirectionalLight(0x6fd6ff,.8);rim.position.set(-5,3,-4);scene.add(rim);
+var g=new THREE.Group();scene.add(g);
+function V(a){return a.map(function(p){return new THREE.Vector2(p[0],p[1])})}
+var ceramic=new THREE.MeshStandardMaterial({color:0xf4eee3,roughness:.22,metalness:.05,side:THREE.DoubleSide});
+var cup=new THREE.Mesh(new THREE.LatheGeometry(V([[0,0],[.8,0],[.95,.08],[1.2,1.3],[1.25,1.5],[1.16,1.5],[1.1,1.28],[.88,.18],[0,.18]]),64),ceramic);
+var saucer=new THREE.Mesh(new THREE.LatheGeometry(V([[0,-.1],[1.9,-.1],[2.2,.05],[2.25,.12],[2.12,.1],[1.7,0],[0,0]]),64),ceramic);
+var coffee=new THREE.Mesh(new THREE.CircleGeometry(1.14,48),new THREE.MeshStandardMaterial({color:0x3a1c0d,roughness:.18}));
+coffee.rotation.x=-Math.PI/2;coffee.position.y=1.28;
+var handle=new THREE.Mesh(new THREE.TorusGeometry(.48,.1,16,40,Math.PI),ceramic);
+handle.rotation.z=-Math.PI/2;handle.position.set(1.17,.85,0);
+g.add(cup,saucer,coffee,handle);
+/* latte-art heart ring */
+var ring=new THREE.Mesh(new THREE.RingGeometry(.35,.62,40),new THREE.MeshStandardMaterial({color:0xd9a566,roughness:.3,transparent:true,opacity:.85}));
+ring.rotation.x=-Math.PI/2;ring.position.y=1.285;g.add(ring);
+/* beans */
+var beanMat=new THREE.MeshStandardMaterial({color:0x5b2f17,roughness:.45});
+var beans=[];
+for(var i=0;i<16;i++){
+  var b=new THREE.Mesh(new THREE.SphereGeometry(.17,16,12),beanMat);b.scale.set(1,.62,.72);
+  b.userData={r:2.7+Math.random()*1.6,y:.4+Math.random()*3,s:.25+Math.random()*.35,a:Math.random()*6.28,rs:Math.random()*2+1};
+  scene.add(b);beans.push(b);
+}
+/* steam */
+function tex(){var c=document.createElement('canvas');c.width=c.height=64;var x=c.getContext('2d'),gr=x.createRadialGradient(32,32,0,32,32,32);gr.addColorStop(0,'rgba(255,255,255,.9)');gr.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=gr;x.fillRect(0,0,64,64);return new THREE.CanvasTexture(c)}
+var N=36,pos=new Float32Array(N*3),seed=[];
+for(i=0;i<N;i++)seed.push({t:Math.random(),x:Math.random()*6.28});
+var sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.BufferAttribute(pos,3));
+var steam=new THREE.Points(sg,new THREE.PointsMaterial({map:tex(),size:.85,transparent:true,opacity:.28,depthWrite:false,color:0xffffff}));
+steam.frustumCulled=false;scene.add(steam);
+function size(){var w=box.clientWidth,h=box.clientHeight;if(!w||!h)return;renderer.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}
+size();if(window.ResizeObserver)new ResizeObserver(size).observe(box);else window.addEventListener('resize',size);
+var tx=0,ty=0,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+window.addEventListener('pointermove',function(e){tx=reduce?0:(e.clientX/innerWidth-.5)*1.2;ty=reduce?0:(e.clientY/innerHeight-.5)*.4});
+var t0=performance.now(),rx=0,ry=0;
+function tick(){
+  requestAnimationFrame(tick);
+  if(!onHome||document.hidden)return;
+  var t=(performance.now()-t0)/1000,k=reduce?0:1;
+  ry+=(tx-ry)*.05;rx+=(ty-rx)*.05;
+  g.rotation.y=-.5+t*.35*k+ry;g.rotation.x=.12+rx;g.position.y=Math.sin(t*1.2)*.08*k;
+  beans.forEach(function(b){var u=b.userData,a=u.a+t*u.s*k;b.position.set(Math.cos(a)*u.r,u.y+Math.sin(t+u.a)*.2*k,Math.sin(a)*u.r*.6);b.rotation.set(t*u.rs*k,t*u.rs*.7*k,u.a)});
+  for(var j=0;j<N;j++){var s=seed[j],p=(s.t+t*.12*k)%1;pos[j*3]=Math.sin(s.x+p*5)*(.25+p*.5)*(1-p*.2);pos[j*3+1]=1.5+p*3.2;pos[j*3+2]=Math.cos(s.x+p*4)*(.25+p*.4)}
+  sg.attributes.position.needsUpdate=true;
+  renderer.render(scene,cam);
+}
+tick();
+}
+booted=true;if(onHome)loadThree();
+})();
+</script>
+</body>
+</html>
